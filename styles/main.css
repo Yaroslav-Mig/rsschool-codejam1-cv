@@ -73,6 +73,7 @@
 .main ul {
   list-style-type: circle;
   list-style-position:inside;
+  box-sizing: border-box;
 }
 .picture {
   display: block; 
@@ -89,4 +90,33 @@ h3.caption ~ address {
 }
 .aside h3.caption {
   margin-left: 10px;
+}
+.caption-aside {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-style: italic;
+  font-family: "Hammersmith One", Verdana, Helvetica, Arial, sans-serif;
+  font-size: 1.1rem;
+}
+
+.aside ul  {
+  max-width: 100%;
+  margin-left: 10px;
+  box-sizing: border-box;
+
+}
+.aside ul li {
+  display: inline-block;
+  margin-right: 5px;
+
+}
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: #2968bb;
+  border-radius: 50%;
+}
+.circle-progress {
+  background-color: #80a7db;
 }
