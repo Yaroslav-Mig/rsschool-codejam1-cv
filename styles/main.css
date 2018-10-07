@@ -1,3 +1,8 @@
+/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,400,900');
+/* font-family: 'Playfair Display', serif; */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,650,900');
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6,9 +11,62 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
   width: 100%;
+  min-height: 600px;
   max-width: 960px;
   margin: 0 auto;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+.main {
+  width: 70%;
+  box-sizing: border-box;
+  padding: 10px 30px 10px 10px;
+  background-color: #e0d5d5;
+  
+}
+.aside {
+  width: 30%;
+  box-sizing: border-box;
+  background-color: #ffc355;
+}
+.profile {
+  margin-top: 10px;
+}
+.title {
+  max-width: 100%;
+  font-family: "Playfair Display", "Book Antiqua", Palatino, "Times New Roman", Times, serif;
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.caption {
+  position: relative;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-family: "Playfair Display", "Book Antiqua", Palatino, "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+  font-weight: 650;
+  line-height: 150%;
+  text-transform: capitalize;
+}
+.caption::after {
+  content: "";
+  position: absolute;
+  left: 0%;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: #828b8b;
+}
+.text,
+.main li {
+  font-family: Roboto, Verdana, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+.main ul {
+  list-style-type: circle;
+  list-style-position:inside;
 }
