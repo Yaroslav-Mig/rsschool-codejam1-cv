@@ -28,10 +28,11 @@
 .aside {
   width: 30%;
   box-sizing: border-box;
-  background-color: #ffc355;
+  background-color: #fff346f5;
 }
 .profile {
   margin-top: 10px;
+  box-sizing: border-box;
 }
 .title {
   max-width: 100%;
@@ -69,4 +70,11 @@
 .main ul {
   list-style-type: circle;
   list-style-position:inside;
+}
+.picture {
+  display: block; 
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border: 3px solid #2968bb;
+  box-sizing: border-box;
 }
