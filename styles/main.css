@@ -23,24 +23,34 @@
 .main,
 .aside,
 .item-content,
-.picture {
+.picture,
+.skills-level,
+.skills-level__img,
+.box-inner,
+.address,
+.address__link {
 -webkit-box-sizing: border-box;
         box-sizing: border-box;
 }
 .main {
-  width: 70%;
+  width: 68%;
   padding: 10px 30px 10px 10px;
   font-family: Roboto, Verdana, Helvetica, Arial, sans-serif;
+  color: #000000;
 }
 .aside {
-  width: 30%;
+  width: 32%;
+  padding: 20px 0;
   font-family: "Hammersmith One", Verdana, Helvetica, Arial, sans-serif;
-  font-size: 1rem;
   color: #fff;
   background-color: #2b3a50;
 }
 .item-content {
+  width:100%;
   margin-top: 10px;
+}
+.aside > .item-content:first-child {
+  margin-top: 0;
 }
 .title,
 .caption  {
@@ -86,28 +96,55 @@
   background: #828b8b;
 }
 .text,
-.main li {
+.list-content__item {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
 }
-.main ul {
+.list-content__link {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px 0 #2b3a50;
+          box-shadow: inset 0 -2px 0 #2b3a50;
+  -webkit-transition: all 0.4s ease-in-out;
+          transition: all 0.4s ease-in-out;
+}
+.list-content__link:hover {
+  color: #fff;
+  -webkit-box-shadow: inset 0 -20px 0 #2b3a50, 
+                      2px 2px 3px rgba(0,0,0,0.3);
+          box-shadow: inset 0 -20px 0 #2b3a50, 
+                      2px 2px 3px rgba(0,0,0,0.3);
+}
+.list-content {
   list-style-type: disc;
   list-style-position:inside;
 }
 .picture {
   display: block; 
-  border-bottom-left-radius: 100px;
-  border-top-right-radius: 100px;
+  -webkit-border-radius: 0 100px;
+     -moz-border-radius: 0 100px;
+          border-radius: 0 100px;
 }
 .address {
-  margin: 10px 30px;
+  margin: 10px 10px;
   letter-spacing: 1px;
 }
-.address > a {
+.address__link {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
   color: #fff;
   text-decoration: none;
   cursor: pointer;
+  -ms-word-wrap: break-word;
+      word-wrap: break-word;
+}
+.address__text {
+  width: 90%;
+  margin-left: 7px;
 }
 .aside h3.caption {
   position: relative;
@@ -121,12 +158,13 @@
   margin-top: 10px;
   margin-bottom: 5px;
 }
-.aside ul  {
+.skills-level  {
   max-width: 100%;
   margin-left: 10px;
 }
-.aside ul li {
+.skills-level__img {
   display: inline-block;
+  max-width: 100%;
   margin-right: 5px;
 }
 .circle {
